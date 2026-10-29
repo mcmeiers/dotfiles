@@ -26,3 +26,4 @@ brew "docker-buildx"
 brew "colima"
 brew "awscli"
 
+brew "dvc"

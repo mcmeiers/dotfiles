@@ -1,0 +1,8 @@
+# Machine-local chezmoi source entries: still applied by `chezmoi apply` on
+# this machine, but deliberately not committed, so they never sync to another
+# machine and never land in the repo's history.
+
+# Atomic Ceph S3 profile (~/.aws/config). Holds no key -- the key is fetched at
+# runtime by ~/.local/bin/atmc-s3-credentials -- but the endpoint and profile
+# are work-infrastructure detail that stays off GitHub.
+private_dot_aws/

@@ -1,1 +1,10 @@
 README.md
+.config/zsh/local_secrets.zsh
+
+# Guard: the `atmc` profile fetches its key at runtime via credential_process,
+# so a real ~/.aws/credentials should never be added to the source state.
+.aws/credentials
+{{ if not .work }}
+.aws
+.local/bin/atmc-s3-credentials
+{{ end }}

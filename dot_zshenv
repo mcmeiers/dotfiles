@@ -1,0 +1,4 @@
+# Read by every zsh, interactive or not, so scripts and non-interactive
+# shells (e.g. Claude Code's Bash tool) see the same env as a terminal.
+# ---- Local secrets (untracked file — see .chezmoiignore) ----
+[[ -r "$HOME/.config/zsh/local_secrets.zsh" ]] && source "$HOME/.config/zsh/local_secrets.zsh"
